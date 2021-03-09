@@ -11,7 +11,7 @@ const PostDetail = () => {
         .then(res=>res.json())
         .then(data=>setPost(data));
 
-    },[])
+    },[id])
 
     const [comments,setComments]=useState([]);
     useEffect(()=>{
@@ -19,7 +19,7 @@ const PostDetail = () => {
         fetch(url)
         .then(res=>res.json())
         .then(data=>setComments(data));
-    },[])
+    },[id])
 
     //console.log(comments);
     return (

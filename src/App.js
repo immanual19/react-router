@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
